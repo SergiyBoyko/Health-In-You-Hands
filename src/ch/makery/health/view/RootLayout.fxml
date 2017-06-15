@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.health.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Пошук" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleBase" text="Відкрити базу точок" />
+              <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Вихід" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Допомога">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="Правила натискання" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
